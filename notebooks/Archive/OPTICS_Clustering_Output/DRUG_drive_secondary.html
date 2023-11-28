@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="d3165a4f-7d73-48d0-b976-6fd89c5f1659" data-root-id="p21746" style="display: contents;"></div>
+  
+    <script type="application/json" id="p21820">
+      {"17c8a29b-a538-475c-be10-fe7a853d32c4":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Column","id":"p21746","attributes":{"children":[{"type":"object","name":"Figure","id":"p21698","attributes":{"x_range":{"type":"object","name":"DataRange1d","id":"p21699"},"y_range":{"type":"object","name":"DataRange1d","id":"p21700"},"x_scale":{"type":"object","name":"LinearScale","id":"p21711"},"y_scale":{"type":"object","name":"LinearScale","id":"p21713"},"title":{"type":"object","name":"Title","id":"p21702"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p21740","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p21694","attributes":{"selected":{"type":"object","name":"Selection","id":"p21696","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p21695"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"NQAAALcAAAAGAQAAMAEAAMQBAADIAQAA6wEAAPIBAAAdAgAALAIAAAgDAAA0AwAAgQMAAPADAAD3AwAATQQAAPEEAAAkBgAAXgYAACMHAADvCQAA2AoAAFgNAAD8DgAAEg8AALgPAADCDwAAzw8AAMQQAADrEAAA0BIAACETAABQFQAAZhYAAIYWAADVFgAAwhcAABQYAAAlGAAA/RwAAH4eAAANHwAASB8AAFofAAA="},"shape":[44],"dtype":"int32","order":"little"}],["DRUG",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="},"shape":[44],"dtype":"float64","order":"little"}],["drive_secondary",{"type":"ndarray","array":{"type":"bytes","data":"w8NwzMwtCEDGD/xh7PEHQMr7m8TeEwhAd/4n931QMUBZt5jE7RkIQLsAyDsiJghAl2J3AKstMUCugB6VTjUxQBcLyUdOSDFAGNHzan9XMUAAVYkBdDAxQMCg1qJzUjFAkj+SYJThB0CjCxNtdfwHQK0nTgUwOTFAJBYMnw/iB0DB982mzhQIQIRoFkgSIAhAZ7RVSQTsB0BeOilQB+YHQOTOfNg5KjFA2C09T5AyMUCSh1FIfuUHQGqR7BLTGQhA0F0tpcwQCEB8j+1ATuwwQMRtdcVpNTFAu8sq9fRRMUDjA2y8lx8xQE8F8k56JAhA/2w0UWssCECFFTh/mjwIQEuhVwJk9DBAo7m80dInCEDKPBZp91YxQOLaeaRXFAhASSGo2YE4MUC3RRBfDSsIQMwORXIJ7wdAk6mCUUkdCEABTYQNTy8IQD0K16Nw/QdAQj7o2az6B0D2KFyPwvUHQA=="},"shape":[44],"dtype":"float64","order":"little"}],["label",{"type":"ndarray","array":["0","0","0","1","0","0","1","1","1","1","1","1","0","0","1","0","0","0","0","0","1","1","0","0","0","1","1","1","1","0","0","0","1","0","1","0","1","0","0","0","0","0","0","0"],"shape":[44],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p21741","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p21742"}}},"glyph":{"type":"object","name":"Circle","id":"p21737","attributes":{"x":{"type":"field","field":"DRUG"},"y":{"type":"field","field":"drive_secondary"},"line_color":{"type":"field","field":"label","transform":{"type":"object","name":"CategoricalColorMapper","id":"p21697","attributes":{"palette":["black","#1f77b4","#aec7e8","#ff7f0e","#ffbb78","#2ca02c","#98df8a","#d62728","#ff9896","#9467bd","#c5b0d5","#8c564b","#c49c94","#e377c2","#f7b6d2","#7f7f7f","#c7c7c7","#bcbd22","#dbdb8d","#17becf","#9edae5"],"factors":["0","1"]}}},"fill_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"hatch_color":{"type":"field","field":"label","transform":{"id":"p21697"}}}},"nonselection_glyph":{"type":"object","name":"Circle","id":"p21738","attributes":{"x":{"type":"field","field":"DRUG"},"y":{"type":"field","field":"drive_secondary"},"line_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Circle","id":"p21739","attributes":{"x":{"type":"field","field":"DRUG"},"y":{"type":"field","field":"drive_secondary"},"line_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"label","transform":{"id":"p21697"}},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p21705","attributes":{"tools":[{"type":"object","name":"BoxSelectTool","id":"p21729","attributes":{"renderers":"auto","overlay":{"type":"object","name":"BoxAnnotation","id":"p21730","attributes":{"syncable":false,"level":"overlay","visible":false,"editable":true,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p21722","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p21724","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p21725"},"axis_label":"drive_secondary","major_label_policy":{"type":"object","name":"AllLabels","id":"p21723"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p21715","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p21717","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p21718"},"axis_label":"DRUG","major_label_policy":{"type":"object","name":"AllLabels","id":"p21716"}}}],"center":[{"type":"object","name":"Grid","id":"p21721","attributes":{"axis":{"id":"p21715"}}},{"type":"object","name":"Grid","id":"p21728","attributes":{"dimension":1,"axis":{"id":"p21722"}}},{"type":"object","name":"Legend","id":"p21743","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p21744","attributes":{"label":{"type":"field","field":"label"},"renderers":[{"id":"p21740"}]}}]}}]}},{"type":"object","name":"Div","id":"p21745","attributes":{"width":200,"height":100,"text":"&lt;strong&gt;Noise Percentage:&lt;/strong&gt; 99.45%"}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p21820').textContent;
+              const render_items = [{"docid":"17c8a29b-a538-475c-be10-fe7a853d32c4","roots":{"p21746":"d3165a4f-7d73-48d0-b976-6fd89c5f1659"},"root_ids":["p21746"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

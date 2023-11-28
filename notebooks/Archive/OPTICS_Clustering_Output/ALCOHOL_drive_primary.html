@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="127c19d0-f293-4a4c-b84e-414550644f5c" data-root-id="p19206" style="display: contents;"></div>
+  
+    <script type="application/json" id="p19280">
+      {"84126a2b-dbd8-4e4f-ac7e-4cefe14e885d":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Column","id":"p19206","attributes":{"children":[{"type":"object","name":"Figure","id":"p19158","attributes":{"x_range":{"type":"object","name":"DataRange1d","id":"p19159"},"y_range":{"type":"object","name":"DataRange1d","id":"p19160"},"x_scale":{"type":"object","name":"LinearScale","id":"p19171"},"y_scale":{"type":"object","name":"LinearScale","id":"p19173"},"title":{"type":"object","name":"Title","id":"p19162"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p19200","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p19154","attributes":{"selected":{"type":"object","name":"Selection","id":"p19156","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p19155"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"IwAAACoAAAD9AAAALgEAAEMBAABjAQAAZgEAAHgBAAB5AQAArAEAALUBAABIAgAATgIAAG8CAAB9AgAAhQIAAMgCAADpAgAA+QIAAGsDAACPAwAAqAMAALkDAAB6BAAAiAQAANsEAAD3BAAA+AQAAAwFAAAIBgAAFwYAAKcGAADKBgAATwcAAGYHAABrBwAAegcAADMIAAAMCQAAMAkAAFYJAAChCQAApwkAAAMKAAAXCgAATgoAAGwKAACqCgAA4AoAAAYLAAAZCwAA/gsAAHMMAACJDAAAjwwAAJgMAACgDAAALw0AAHQOAACJDgAAPw8AAEcPAAA+EAAA3xAAADERAABUEQAAohEAANIRAAANEgAAQxIAAI8SAADsEgAAexMAALYTAABEFAAAYxQAANAUAAADFQAAFhUAABoVAABRFQAAWxUAADoWAAChFwAAtRcAACcYAAAoGAAAshgAAPcYAAA5GQAAxRkAAAwaAAAyGgAAMxoAAGYaAAByGgAAghoAAHwdAACnHQAA/R0AAHIeAADIHgAA6h4AAPkeAAAfHwAAOh8AAE8fAABZHwAAWh8AAGcfAAA="},"shape":[110],"dtype":"int32","order":"little"}],["ALCOHOL",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="},"shape":[110],"dtype":"float64","order":"little"}],["drive_primary",{"type":"ndarray","array":{"type":"bytes","data":"fOJzjPGT+z9QgHWayAAIQMY/u9H8If4/OLmzfy1AEEDCD1+I070NQP7fNXg5wQFAIUMhd6sX/j8TuGcqzGb7P4gqWkVcM/4/sKxPAsUwDUB+n1wZOW8KQGZDy1j4QwhAYZBveaPKBUAeSCllzBMFQAlhNvNtXvY/uVQE7eRhAkBR8Ezz4SEBQHfubJuTrwFAdZHKrgKDEECllveCYP8JQJujYQZQRgFAzzwlfXkW/z87Fjo3WAoHQJKyEF499/8/XEjyIjTOA0B42y66H3YQQMj3uPXOdQtAxdes01B9D0DYoYv4YE0HQAQij9WqVvA/zysI6Pk0AkAdP+v45iADQJPV10q2Yvc/cEq/2ZQ6BUDyIXU+AvcEQBWVAoEm0fo/b+cy2bGY9j+6Eu8q0qT+P8SuWM5OWew/fvHmZ+HpBEBgLwn3D6f/P8yr2Mk9FQFA+N21EzJg9D8TUJe5MX8MQA0p0oyQE/8/c0wfw2xrCEBRmaR5Z6wDQNgTbBVRivU/BkAYt0A+9j+w76BzbnEEQNT2ZaYBWfw/U+ym/iLDCEACwwATnGAJQMwMAmdbjwpABvqfV5dmC0AFtswmASQGQLngrQY7gABA2rlZQyAo8T90z1tPhxACQKIjRzoDK+k/vUaqrsEkAUA8exrZ8sL4P+AVGwar0xBAmgmgonzhC0CqgA+F4gYGQJLkQrBt+/g/BHS6Jfs79j/8tPBYaBbyP8PZcT6zOQJAcHtI6iQOEUAelgs71OX8P/bGczOgIPM/8EUs1w/f8T/KqLn7KBz5P+I+n2dSdQNACMi0bHB0DECflDY5YUEMQB9KHBVzsfI/3StmgjBuBEAajQeFb5UFQCOEdisAn/U/ldhVZI/B/D9UwNHyJ+IFQA32ZY9wBgpA/5/uKkylBEBBT7Ht+bz8P9fQBJEiEP0/OtSShJff8z9HQztmF5MPQH7cf66hIQhAqdyQWGfLDEBzMdOwkE0JQNeBQnIKOgBAnhT/2m7ECEANE+WLZV4IQOzagUkMhQBAh/H9ur0P/T8u9BR7YPoGQG/Tb8QyYAhAdOe82BHJBkBZEC0m9BYHQLFEalHUNgtAIhYBsxpFCUBZbGgKahYEQCgJF1+lwAlA6otw0rUo/j+GVbyReWQRQDljNen4NAFA/RfG5ZGGDUCaW9rWOjoQQA=="},"shape":[110],"dtype":"float64","order":"little"}],["label",{"type":"ndarray","array":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],"shape":[110],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p19201","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p19202"}}},"glyph":{"type":"object","name":"Circle","id":"p19197","attributes":{"x":{"type":"field","field":"ALCOHOL"},"y":{"type":"field","field":"drive_primary"},"line_color":{"type":"field","field":"label","transform":{"type":"object","name":"CategoricalColorMapper","id":"p19157","attributes":{"palette":["black","#1f77b4","#aec7e8","#ff7f0e","#ffbb78","#2ca02c","#98df8a","#d62728","#ff9896","#9467bd","#c5b0d5","#8c564b","#c49c94","#e377c2","#f7b6d2","#7f7f7f","#c7c7c7","#bcbd22","#dbdb8d","#17becf","#9edae5"],"factors":["0"]}}},"fill_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"hatch_color":{"type":"field","field":"label","transform":{"id":"p19157"}}}},"nonselection_glyph":{"type":"object","name":"Circle","id":"p19198","attributes":{"x":{"type":"field","field":"ALCOHOL"},"y":{"type":"field","field":"drive_primary"},"line_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Circle","id":"p19199","attributes":{"x":{"type":"field","field":"ALCOHOL"},"y":{"type":"field","field":"drive_primary"},"line_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"label","transform":{"id":"p19157"}},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p19165","attributes":{"tools":[{"type":"object","name":"BoxSelectTool","id":"p19189","attributes":{"renderers":"auto","overlay":{"type":"object","name":"BoxAnnotation","id":"p19190","attributes":{"syncable":false,"level":"overlay","visible":false,"editable":true,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p19182","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p19184","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p19185"},"axis_label":"drive_primary","major_label_policy":{"type":"object","name":"AllLabels","id":"p19183"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p19175","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p19177","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p19178"},"axis_label":"ALCOHOL","major_label_policy":{"type":"object","name":"AllLabels","id":"p19176"}}}],"center":[{"type":"object","name":"Grid","id":"p19181","attributes":{"axis":{"id":"p19175"}}},{"type":"object","name":"Grid","id":"p19188","attributes":{"dimension":1,"axis":{"id":"p19182"}}},{"type":"object","name":"Legend","id":"p19203","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p19204","attributes":{"label":{"type":"field","field":"label"},"renderers":[{"id":"p19200"}]}}]}}]}},{"type":"object","name":"Div","id":"p19205","attributes":{"width":200,"height":100,"text":"&lt;strong&gt;Noise Percentage:&lt;/strong&gt; 98.63%"}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p19280').textContent;
+              const render_items = [{"docid":"84126a2b-dbd8-4e4f-ac7e-4cefe14e885d","roots":{"p19206":"127c19d0-f293-4a4c-b84e-414550644f5c"},"root_ids":["p19206"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>

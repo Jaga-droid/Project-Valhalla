@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="c635ea74-2553-4b19-ba04-24d30cdf7f1c" data-root-id="p21111" style="display: contents;"></div>
+  
+    <script type="application/json" id="p21185">
+      {"e5734e95-8b28-490d-b020-c40126683099":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Column","id":"p21111","attributes":{"children":[{"type":"object","name":"Figure","id":"p21063","attributes":{"x_range":{"type":"object","name":"DataRange1d","id":"p21064"},"y_range":{"type":"object","name":"DataRange1d","id":"p21065"},"x_scale":{"type":"object","name":"LinearScale","id":"p21076"},"y_scale":{"type":"object","name":"LinearScale","id":"p21078"},"title":{"type":"object","name":"Title","id":"p21067"},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p21105","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p21059","attributes":{"selected":{"type":"object","name":"Selection","id":"p21061","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p21060"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"hAEAANEBAAAgAgAA2QIAAAIGAAAjBgAAVwYAAG0HAABxBwAAywcAAE8JAABRCQAAjwwAAGcNAACHDQAAeA8AAL0WAADFFgAAmhcAAP4YAAA8GQAA"},"shape":[21],"dtype":"int32","order":"little"}],["DRUG",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"},"shape":[21],"dtype":"float64","order":"little"}],["drive_petrol",{"type":"ndarray","array":{"type":"bytes","data":"jXkkEkGN9j+hDyo/d5j2P8kCCisO5fY/1FCh790Q9z8zIARAmwX3P4Mj1UPm9PY/AoP5QczO9j91WViKEvD2PzD4qrlh5fY/4g4m6dO19j/D6TyvYMX2P2sm4nKD0fY/e9S03yS69j/TFBf+wdn2P9HfsqjB+vY/rdpvm/2t9j/9ETinMsL2P25MiyBOEfc/7rGLAE6+9j80YSPH1Nz2Pya9kMOKqvY/"},"shape":[21],"dtype":"float64","order":"little"}],["label",{"type":"ndarray","array":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],"shape":[21],"dtype":"object","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p21106","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p21107"}}},"glyph":{"type":"object","name":"Circle","id":"p21102","attributes":{"x":{"type":"field","field":"DRUG"},"y":{"type":"field","field":"drive_petrol"},"line_color":{"type":"field","field":"label","transform":{"type":"object","name":"CategoricalColorMapper","id":"p21062","attributes":{"palette":["black","#1f77b4","#aec7e8","#ff7f0e","#ffbb78","#2ca02c","#98df8a","#d62728","#ff9896","#9467bd","#c5b0d5","#8c564b","#c49c94","#e377c2","#f7b6d2","#7f7f7f","#c7c7c7","#bcbd22","#dbdb8d","#17becf","#9edae5"],"factors":["0"]}}},"fill_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"hatch_color":{"type":"field","field":"label","transform":{"id":"p21062"}}}},"nonselection_glyph":{"type":"object","name":"Circle","id":"p21103","attributes":{"x":{"type":"field","field":"DRUG"},"y":{"type":"field","field":"drive_petrol"},"line_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"Circle","id":"p21104","attributes":{"x":{"type":"field","field":"DRUG"},"y":{"type":"field","field":"drive_petrol"},"line_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"label","transform":{"id":"p21062"}},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p21070","attributes":{"tools":[{"type":"object","name":"BoxSelectTool","id":"p21094","attributes":{"renderers":"auto","overlay":{"type":"object","name":"BoxAnnotation","id":"p21095","attributes":{"syncable":false,"level":"overlay","visible":false,"editable":true,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p21087","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p21089","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p21090"},"axis_label":"drive_petrol","major_label_policy":{"type":"object","name":"AllLabels","id":"p21088"}}}],"below":[{"type":"object","name":"LinearAxis","id":"p21080","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p21082","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p21083"},"axis_label":"DRUG","major_label_policy":{"type":"object","name":"AllLabels","id":"p21081"}}}],"center":[{"type":"object","name":"Grid","id":"p21086","attributes":{"axis":{"id":"p21080"}}},{"type":"object","name":"Grid","id":"p21093","attributes":{"dimension":1,"axis":{"id":"p21087"}}},{"type":"object","name":"Legend","id":"p21108","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p21109","attributes":{"label":{"type":"field","field":"label"},"renderers":[{"id":"p21105"}]}}]}}]}},{"type":"object","name":"Div","id":"p21110","attributes":{"width":200,"height":100,"text":"&lt;strong&gt;Noise Percentage:&lt;/strong&gt; 99.74%"}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p21185').textContent;
+              const render_items = [{"docid":"e5734e95-8b28-490d-b020-c40126683099","roots":{"p21111":"c635ea74-2553-4b19-ba04-24d30cdf7f1c"},"root_ids":["p21111"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
