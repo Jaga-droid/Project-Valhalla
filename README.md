@@ -20,8 +20,7 @@
 
 ### Milestones
 
-> [!NOTE]
-> Create a bullet list of the key milestones for your project. Discuss these with your group. You may need to update these as the project progresses.
+
 
     Milestone 1(18th Sep-24th Sep): Project Topic, Direction, and Questions.
     Milestone 2(25th Sep-8th Oct): Data Analysis and Exploration.
