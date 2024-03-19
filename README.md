@@ -1,16 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/58HShPQN)
+
 # Data Mining and Machine Learning Group Coursework
 
-> [!NOTE]
-> You should update and customize this README as the project progresses.
 
-> [!IMPORTANT]
-> See the COURSEWORK specification on CANVAS for details of the group coursework criteria/deliverables
 
 ## Group Members
 
-> [!IMPORTANT]
-> Include your names and `@` your GitHub usernames for each.
 
 1. Akarshan Jaiswal @Akarshan-Jaiswal
 2. Jagatheesh Pugazhenthi Pulavan @Jaga-droid
@@ -23,10 +17,6 @@
 > by analyzing the SIMD(Scottish Index of Multiple Deprivation) for Multiple years
 > and help in prevention/dispatch of emergency services in the most deprived regions.
 
-### Research objectives
-
-> [!NOTE]
-> What are the questions you are trying to answer? What are the goals of your project?
 
 ### Milestones
 
@@ -41,14 +31,6 @@
 
 
 ## Findings Report
-
-<!-- Below you should report all of your findings in each section. You can fill this out as the project progresses. -->
-
-### Research objectives
-> [!NOTE]
-> What are the most prominent contributing factors to the overall Deprevation existing in Scotland?
-> Which regions are the most deprived according to the dataset?
-> Where in these regions are the most emergency/social services needed?
 
 ### Datasets
 1. SIMD(Scottish Index of Multiple Deprivation) for the years 2016 and 2020
@@ -97,8 +79,8 @@
 | 50%   |      4020.5  |            758     |                          479     |     0.1       |        70      |         0.08      |            40      |   70.1659 |   43.3202 |   92      |   93.0656 |   90.3793  |    0.05      |       2.98824  |    2.73659  |    2.38418  |        2.21306  |       3.94624  |           4.77694 |    8.66551 |    7.46504 |    10.9692  |             68      |                8      |          0.09375   |           0.0103448  | 2016       |
 | 75%   |      6030.75 |            884     |                          569     |     0.18      |       130      |         0.15      |            70      |  133.146  |  129.245  |  120      |  120.54   |  138.233   |    0.09      |       4.11098  |    3.88916  |    3.23008  |        2.95388  |       5.73035  |           6.5313  |   12.0073  |   10.1398  |    15.4992  |            114      |               17      |          0.152297  |           0.0235103  | 2016       |
 | max   |      8041    |           3847     |                         3423     |     0.73      |       555      |         0.53      |           325      | 2350.54   | 1864.13   |  950      |  323.786  |  353.078   |    0.5       |      63.5065   |   87.8162   |   17.3199   |      186.132    |     190        |         116.149   |  108.79    |   40.2779  |   190       |            490      |              187      |          0.583882  |           0.214964   | 2020       |
-<!-- Visualisations of your dataset -->
-<!-- Analysis of your dataset -->
+<!-- Visualisations of dataset -->
+<!-- Analysis of  dataset -->
    - Column comparision of 2016 and 2020 files: [Column Comparision](data/2016_2020_DataColumn_Comparison_27092023.xlsx)
    - Notebook containing code for the following exploratory analysis.
 
@@ -132,14 +114,7 @@
 	   - [6. Gaussian Clustering](notebooks/Archive/Clustering_Scripts.ipynb)
 	   - [7. K-medoid Clustering](notebooks/Archive/KMediod_Cluster.ipynb)
 
-#### Experimental design
-<!-- Describe your experimental design and choices for the week. -->
 
-#### Results
-<!-- Tables showing the results of your experiments -->
-
-#### Discussion
-<!-- A brief discussion on the results of your experiment -->
 
 ### Decision Trees
 - Notebook containing Implemented various decision tree models on the dataset:
@@ -228,15 +203,15 @@ selected was too little. Hence, the model could not capture instances of substan
 
 #### Results
 
-<!-- Tables showing the results of your experiments -->
+
    - We didn't get a very high accuracy but it was decent enough.
 
 #### Discussion
-<!-- A brief discussion on the results of your experiment -->
+
    - In our experiments, we found that using the ReLU activation function in our CNN yielded the best results, offering an optimal balance of non-linearity and computational efficiency. To combat overfitting, we implemented a 20% dropout rate, effectively regularizing our model to enhance its generalization on unseen data. This combination of ReLU and dropout proved crucial for improving our model's performance.
 
 ### Conclusion
-<!-- Final conclusions regarding your initial objectives -->
+
    - The Experiments we did in developiong this custom-classified CNN model has given significant insights and outcomes. By labelling images to create custom classes, we noticed our model to  handle diverse range of image sizes, making it versatile and adaptable. 
    - The training process, conducted over 50 epochs with 'sparse_categorical_crossentropy' as the loss function and 'rmsprop' as the optimizer, was aimed at enhancing model accuracy and efficiency. Our data allocation strategy, with an 80-20 split between training and testing sets, provided a balanced approach for both learning and validation.
    Although the achieved accuracy was not exceptionally high, it was reasonably satisfactory, indicating a solid foundation for further refinement. 
